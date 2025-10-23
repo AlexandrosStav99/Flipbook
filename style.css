@@ -1,0 +1,633 @@
+/*! CSS Used from: https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  align-content: center;
+}
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+button {
+  border-radius: 0;
+}
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+button {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button {
+  overflow: visible;
+}
+button {
+  text-transform: none;
+}
+[type="button"],
+button {
+  -webkit-appearance: button;
+}
+[type="button"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+h2 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 2rem;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+}
+.btn:hover {
+  color: #212529;
+  text-decoration: none;
+}
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.btn:disabled {
+  opacity: 0.65;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+.btn-primary:focus {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+.btn-primary:disabled {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+.btn-secondary:focus {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+  box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+.btn-secondary:disabled {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+.btn-info {
+  color: #fff;
+  background-color: #946860;
+  border-color: #946860;
+}
+.btn-info:hover {
+  color: #fff;
+  background-color: #ad7c5d ;
+  border-color: #ad7c5d ;
+}
+.btn-info:focus {
+  color: #fff;
+  background-color: #ad7c5d ;
+  border-color: #ad7c5d ;
+  box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
+}
+.btn-info:disabled {
+  color: #fff;
+  background-color: #633b37;
+  border-color: #633b37;
+}
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+.btn-group {
+  position: relative;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+}
+.btn-group > .btn {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+.btn-group > .btn:hover {
+  z-index: 1;
+}
+.btn-group > .btn:active,
+.btn-group > .btn:focus {
+  z-index: 1;
+}
+.btn-group > .btn:not(:first-child) {
+  margin-left: -1px;
+}
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.btn-group > .btn:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+.overflow-hidden {
+  overflow: hidden !important;
+}
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+.mt-3 {
+  margin-top: 1rem !important;
+}
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+.pt-3 {
+  padding-top: 1rem !important;
+}
+.pb-3 {
+  padding-bottom: 1rem !important;
+}
+.text-center {
+  text-align: center !important;
+}
+@media print {
+  *,
+  ::after,
+  ::before {
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+  h2 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2 {
+    page-break-after: avoid;
+  }
+  .container {
+    min-width: 992px !important;
+  }
+}
+/*! CSS Used from: https://nodlik.github.io/StPageFlip/static/style.css */
+.demo-block {
+  border-top: solid 1px #dcdcdc;
+  border-bottom: solid 1px #dcdcdc;
+}
+.flip-book {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  display: none;
+}
+.page {
+  background-color: #fdfaf7;
+  color: #785e3a;
+  border: solid 1px #c2b5a3;
+  overflow: hidden;
+}
+
+#first {
+  padding: 0 !important;
+}
+.page .page-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.page .page-content .page-header {
+  height: 30px;
+  font-size: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+.page .page-content .page-image {
+  height: 100%;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.page .page-content .page-text {
+  height: 100%;
+  flex-grow: 1;
+  font-size: 80%;
+  text-align: justify;
+  margin-top: 10px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  border-top: solid 1px #f4e8d7;
+}
+.page .page-content .page-footer {
+  height: 30px;
+  border-top: solid 1px #f4e8d7;
+  font-size: 80%;
+  color: #998466;
+}
+.page.--left {
+  border-right: 0;
+  box-shadow: inset -7px 0 30px -7px rgba(0, 0, 0, 0.4);
+}
+.page.--right {
+  border-left: 0;
+  box-shadow: inset 7px 0 30px -7px rgba(0, 0, 0, 0.4);
+}
+.page.--right .page-footer {
+  text-align: right;
+}
+/*! CSS Used from: Embedded */
+.stf__wrapper {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  transform: translateZ(0);
+}
+.stf__wrapper canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.stf__block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.stf__item {
+  display: none;
+  position: absolute;
+}
+
+/* specific animated cover page */
+#cover-page {
+  position: relative;
+  background: linear-gradient(-45deg, #936336, #d3a096, #936336, #d3a096);
+  background-size: 200% 200%;
+  animation: gradient 7s ease alternate infinite;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  backface-visibility: hidden;
+}
+
+/* cover overlay & stars */
+.overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background: rgba(40, 40, 41, 0.2);
+}
+.overlay::before {
+  content: "";
+  position: absolute;
+  inset: -15% 0 -15% 0;
+  background-image: url("./images/stars.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(1.1) contrast(1.1);
+  transform: translateY(-10%);
+  animation: starDrift 5s ease-in-out alternate infinite;
+  will-change: transform;
+}
+
+/* logo */
+.logo {
+  position: relative;
+  z-index: 2;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  transition: transform 0.35s;
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* keyframes */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes starDrift {
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* FlipBook */
+/* 
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100dvh;
+  perspective: 1000px;
+  font: 1em/1.4 "Poppins", sans-serif;
+  overflow: hidden;
+  color: hsl(180 68% 5%);
+  background-image: radial-gradient(
+    circle farthest-corner at 50% 50%,
+    hsl(187 20% 88%) 30%,
+    hsl(149 20% 94%) 100%
+  );
+} */
+
+.book-desk {
+  position: relative;
+  margin: auto;
+  width: 60cqmin;
+  pointer-events: none; /* allow lower-Z page-desks clicks to pass through */
+  transform-style: preserve-3d;
+  transition: translate 1s;
+  translate: calc(min(var(--c), 1) * 50%) 0%;
+  counter-reset: page-desk -1;
+  height: 90cqmin;
+}
+
+@media (max-width: 850px) {
+  .book-desk {
+    width: 48vw;
+  }
+}
+
+.book-desk a {
+  color: inherit;
+}
+
+.page-desk {
+  --thickness: 4; /* do not go below 0.5 to avoid transparency */
+  flex: none;
+  display: flex;
+  width: 100%;
+  font-size: 2cqmin;
+  pointer-events: all;
+  user-select: none;
+  transform-style: preserve-3d;
+  transform-origin: left center;
+  transition: transform 1s,
+    rotate 1s ease-in
+      calc((min(var(--i), var(--c)) - max(var(--i), var(--c))) * 50ms);
+  translate: calc(var(--i) * -100%) 0 0;
+  transform: translateZ(
+    calc((var(--c) - var(--i) - 0.5) * calc(var(--thickness) * 0.23cqmin))
+  );
+  rotate: 0 1 0 calc(clamp(0, var(--c) - var(--i), 1) * -180deg);
+  box-shadow: 0 0.5em 1em -0.2em #00000020;
+  border-radius: 20px;
+}
+
+.front-desk,
+.back-desk {
+  position: relative;
+  flex: none;
+  width: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background-color: #fff;
+  translate: 0; /* fix back-deskface visibility in Firefox */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  padding: 2em;
+  border: 1px solid #0002;
+}
+
+.front-desk img,
+.back-desk img {
+  object-fit: cover;
+}
+
+/* page-desk numbers
+.front-desk::after,
+.back-desk::after {
+  position: absolute;
+  bottom: 1em;
+  counter-increment: page-desk;
+  content: counter(page-desk) ".";
+  font-size: 0.8em;
+} */
+
+/* remove number on covers */
+.cover::after {
+  content: "";
+}
+
+/* images: remove padding if an <img> exists */
+.front-desk:has(img),
+.back-desk:has(img) {
+  padding: 0;
+  height: 100%;
+}
+
+.front-desk>img:not(.logo),
+.back-desk>img:not(.logo),
+.page-content>img:not(.logo) {
+  height: 100%;
+}
+
+/* back-desk side flip */
+.back-desk {
+  translate: -100% 0;
+  rotate: 0 1 0 180deg;
+}
+
+/* front-desk/back-desk styling */
+.front-desk {
+  right: auto;
+  background: linear-gradient(to left, #f7f7f7 80%, #eee 100%);
+  border-radius: 0.1em 0.5em 0.5em 0.1em;
+}
+.front-desk::after {
+  right: 1em;
+}
+
+.back-desk {
+  background-image: linear-gradient(to right, #f7f7f7 80%, #eee 100%);
+  border-radius: 0.5em 0.1em 0.1em 0.5em;
+}
+.back-desk::after {
+  left: 1em;
+}
+
+/* specific animated cover page-desk */
+#cover-page-desk {
+  position: relative;
+  background: linear-gradient(-45deg, #936336, #d3a096, #936336, #d3a096);
+  background-size: 200% 200%;
+  animation: gradient 10s ease alternate infinite;
+}
+
+/* cover overlay & stars */
+.overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background: rgba(44, 42, 42, 0.2);
+}
+.overlay::before {
+  content: "";
+  position: absolute;
+  inset: -15% 0 -15% 0;
+  background-image: url("./images/stars.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(1.1) contrast(1.1);
+  transform: translateY(-10%);
+  animation: starDrift 5s ease-in-out alternate infinite;
+  will-change: transform;
+}
+
+/* logo */
+.logo {
+  position: relative;
+  z-index: 2;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  transition: transform 0.35s;
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* keyframes */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes starDrift {
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

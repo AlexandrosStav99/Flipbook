@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="pt-3 pb-3 overflow-hidden d-md-none">
+      <div class="container mb-3 text-center" id="buttonDemoSelection">
+        <div class="btn-group" role="group" aria-label=""></div>
+      </div>
+
+      <div class="container">
+        <div id="htmlBook">
+          <div
+            class="flip-book html-book stf__wrapper --landscape"
+            id="htmlBookExample"
+            style="
+              min-width: 350px;
+              min-height: 467px;
+              width: 100%;
+              max-width: 1400px;
+              display: block;
+              padding-bottom: 66.6364%;
+            "
+          >
+            <div class="stf__block">
+              <div
+                class="page stf__item"
+                id="first"
+                style="display: none; z-index: 1"
+              >
+                <div class="page-content">
+                  <div
+                    class="front cover d-flex align-items-center"
+                    id="cover-page"
+                  >
+                    <div class="overlay"></div>
+                    <img
+                      class="logo"
+                      src="./images/logo-maroon.png"
+                      alt="Logo"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="page stf__item" style="display: none; z-index: 1">
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/1.png"
+                    alt="1"
+                  />
+                  <div class="page-footer">1</div>
+                </div>
+              </div>
+              <div class="page stf__item" style="display: none; z-index: 1">
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/2.png"
+                    alt="2"
+                  />
+                  <div class="page-footer">2</div>
+                </div>
+              </div>
+              <div class="page stf__item --left --simple" style="display: none">
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/3.png"
+                    alt="3"
+                  />
+                  <div class="page-footer">3</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item --right --simple"
+                style="display: none"
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/4.png"
+                    alt="4"
+                  />
+                  <div class="page-footer">4</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/5.png"
+                    alt="5"
+                  />
+                  <div class="page-footer">5</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/6.png"
+                    alt="6"
+                  />
+                  <div class="page-footer">6</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/7.png"
+                    alt="7"
+                  />
+                  <div class="page-footer">7</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/8.png"
+                    alt="8"
+                  />
+                  <div class="page-footer">8</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item --left"
+                style="
+                  position: absolute;
+                  display: block;
+                  height: 739.664px;
+                  left: 0px;
+                  top: 0.168182px;
+                  width: 555px;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/9.png"
+                    alt="9"
+                  />
+                  <div class="page-footer">9</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item --right"
+                style="
+                  position: absolute;
+                  display: block;
+                  height: 739.664px;
+                  left: 555px;
+                  top: 0.168182px;
+                  width: 555px;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/10.png"
+                    alt="10"
+                  />
+                  <div class="page-footer">10</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item --right --simple"
+                style="display: none"
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/11.png"
+                    alt="11"
+                  />
+                  <div class="page-footer">11</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/12.png"
+                    alt="12"
+                  />
+                  <div class="page-footer">12</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/13.png"
+                    alt="13"
+                  />
+                  <div class="page-footer">13</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/14.png"
+                    alt="14"
+                  />
+                  <div class="page-footer">14</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/15.png"
+                    alt="15"
+                  />
+                  <div class="page-footer">15</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item --left"
+                style="
+                  position: absolute;
+                  display: block;
+                  height: 739.664px;
+                  left: 0px;
+                  top: 0.168182px;
+                  width: 555px;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/16.png"
+                    alt="16"
+                  />
+                  <div class="page-footer">16</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item --right"
+                style="
+                  position: absolute;
+                  display: block;
+                  height: 739.664px;
+                  left: 555px;
+                  top: 0.168182px;
+                  width: 555px;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/17.png"
+                    alt="17"
+                  />
+                  <div class="page-footer">17</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item --right --simple"
+                style="display: none"
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/18.png"
+                    alt="18"
+                  />
+                  <div class="page-footer">18</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/19.png"
+                    alt="19"
+                  />
+                  <div class="page-footer">19</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/20.png"
+                    alt="20"
+                  />
+                  <div class="page-footer">20</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/21.png"
+                    alt="21"
+                  />
+                  <div class="page-footer">21</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/22.png"
+                    alt="22"
+                  />
+                  <div class="page-footer">22</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item --left"
+                style="
+                  position: absolute;
+                  display: block;
+                  height: 739.664px;
+                  left: 0px;
+                  top: 0.168182px;
+                  width: 555px;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/23.png"
+                    alt="23"
+                  />
+                  <div class="page-footer">23</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item --right"
+                style="
+                  position: absolute;
+                  display: block;
+                  height: 739.664px;
+                  left: 555px;
+                  top: 0.168182px;
+                  width: 555px;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/24.png"
+                    alt="24"
+                  />
+                  <div class="page-footer">24</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item --right --simple"
+                style="display: none"
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/25.png"
+                    alt="25"
+                  />
+                  <div class="page-footer">25</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/26.png"
+                    alt="26"
+                  />
+                  <div class="page-footer">26</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/27.png"
+                    alt="27"
+                  />
+                  <div class="page-footer">27</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/28.png"
+                    alt="28"
+                  />
+                  <div class="page-footer">28</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/29.png"
+                    alt="29"
+                  />
+                  <div class="page-footer">29</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item --left"
+                style="
+                  position: absolute;
+                  display: block;
+                  height: 739.664px;
+                  left: 0px;
+                  top: 0.168182px;
+                  width: 555px;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/30.png"
+                    alt="30"
+                  />
+                  <div class="page-footer">30</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item --right"
+                style="
+                  position: absolute;
+                  display: block;
+                  height: 739.664px;
+                  left: 555px;
+                  top: 0.168182px;
+                  width: 555px;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/31.png"
+                    alt="31"
+                  />
+                  <div class="page-footer">31</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item --right --simple"
+                style="display: none"
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/32.png"
+                    alt="32"
+                  />
+                  <div class="page-footer">32</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/33.png"
+                    alt="33"
+                  />
+                  <div class="page-footer">33</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/34.png"
+                    alt="34"
+                  />
+                  <div class="page-footer">34</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/35.png"
+                    alt="35"
+                  />
+                  <div class="page-footer">35</div>
+                </div>
+              </div>
+              <div
+                class="page stf__item"
+                style="
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  box-sizing: border-box;
+                  display: none;
+                  z-index: 1;
+                "
+              >
+                <div class="page-content">
+                  <img
+                    class="img-fluid"
+                    src="./Images/Schedule/36.png"
+                    alt="36"
+                  />
+                  <div class="page-footer">36</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="canvasBook" style="display: none">
+          <div
+            class="flip-book canvas-book stf__wrapper --portrait"
+            id="canvasBookExample"
+            style="
+              min-width: 350px;
+              min-height: 467px;
+              width: 100%;
+              max-width: 1400px;
+              display: block;
+              padding-bottom: 133.273%;
+            "
+          >
+            <canvas class="stf__canvas" width="100" height="100"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="text-center mt-3 mb-2">
+          <button type="button" class="btn btn-info btn-sm btn-book-prev">
+            Previous page
+          </button>
+          [<span class="page-count">10</span> of
+          <span class="page-total">10</span>]
+          <button type="button" class="btn btn-info btn-sm btn-book-next">
+            Next page
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="book-desk d-none d-md-flex">
+      <div class="page-desk">
+        <div class="front-desk cover" id="cover-page-desk">
+          <div class="overlay"></div>
+          <img class="logo" src="./images/logo-maroon.png" alt="Logo" />
+        </div>
+        <div class="back-desk">
+          <img class="img-fluid" src="./Images/Schedule/1.png" alt="1" />
+        </div>
+      </div>
+
+      <div class="page-desk">
+        <div class="front-desk">
+          <img class="img-fluid" src="./Images/Schedule/2.png" alt="2" />
+        </div>
+        <div class="back-desk">
+          <img class="img-fluid" src="./Images/Schedule/3.png" alt="3" />
+        </div>
+      </div>
+
+      <div class="page-desk">
+        <div class="front-desk">
+          <img class="img-fluid" src="./Images/Schedule/4.png" alt="4" />
+        </div>
+        <div class="back-desk">
+          <img class="img-fluid" src="./Images/Schedule/5.png" alt="5" />
+        </div>
+      </div>
+
+      <div class="page-desk">
+        <div class="front-desk">
+          <img class="img-fluid" src="./Images/Schedule/6.png" alt="6" />
+        </div>
+        <div class="back-desk">
+          <img class="img-fluid" src="./Images/Schedule/7.png" alt="7" />
+        </div>
+      </div>
+
+      <div class="page-desk">
+        <div class="front-desk">
+          <img class="img-fluid" src="./Images/Schedule/8.png" alt="8" />
+        </div>
+        <div class="back-desk">
+          <img class="img-fluid" src="./Images/Schedule/9.png" alt="9" />
+        </div>
+      </div>
+
+      <div class="page-desk">
+        <div class="front-desk">
+          <img class="img-fluid" src="./Images/Schedule/10.png" alt="10" />
+        </div>
+        <div class="back-desk">
+          <img class="img-fluid" src="./Images/Schedule/11.png" alt="11" />
+        </div>
+      </div>
+
+      <div class="page-desk">
+        <div class="front-desk">
+          <img class="img-fluid" src="./Images/Schedule/12.png" alt="12" />
+        </div>
+        <div class="back-desk">
+          <img class="img-fluid" src="./Images/Schedule/13.png" alt="13" />
+        </div>
+      </div>
+
+      <div class="page-desk">
+        <div class="front-desk">
+          <img class="img-fluid" src="./Images/Schedule/14.png" alt="14" />
+        </div>
+        <div class="back-desk">
+          <img class="img-fluid" src="./Images/Schedule/15.png" alt="15" />
+        </div>
+      </div>
+
+      <div class="page-desk">
+        <div class="front-desk">
+          <img class="img-fluid" src="./Images/Schedule/16.png" alt="16" />
+        </div>
+        <div class="back-desk">
+          <img class="img-fluid" src="./Images/Schedule/17.png" alt="17" />
+        </div>
+      </div>
+
+      <div class="page-desk">
+        <div class="front-desk">
+          <img class="img-fluid" src="./Images/Schedule/18.png" alt="18" />
+        </div>
+        <div class="back-desk">
+          <img class="img-fluid" src="./Images/Schedule/19.png" alt="19" />
+        </div>
+      </div>
+
+      <div class="page-desk">
+        <div class="front-desk">
+          <img class="img-fluid" src="./Images/Schedule/20.png" alt="20" />
+        </div>
+        <div class="back-desk">
+          <img class="img-fluid" src="./Images/Schedule/21.png" alt="21" />
+        </div>
+      </div>
+
+      <div class="page-desk">
+        <div class="front-desk">
+          <img class="img-fluid" src="./Images/Schedule/22.png" alt="22" />
+        </div>
+        <div class="back-desk">
+          <img class="img-fluid" src="./Images/Schedule/23.png" alt="23" />
+        </div>
+      </div>
+
+      <div class="page-desk">
+        <div class="front-desk">
+          <img class="img-fluid" src="./Images/Schedule/24.png" alt="24" />
+        </div>
+        <div class="back-desk">
+          <img class="img-fluid" src="./Images/Schedule/25.png" alt="25" />
+        </div>
+      </div>
+
+      <div class="page-desk">
+        <div class="front-desk">
+          <img class="img-fluid" src="./Images/Schedule/26.png" alt="26" />
+        </div>
+        <div class="back-desk">
+          <img class="img-fluid" src="./Images/Schedule/27.png" alt="27" />
+        </div>
+      </div>
+
+      <div class="page-desk">
+        <div class="front-desk">
+          <img class="img-fluid" src="./Images/Schedule/28.png" alt="28" />
+        </div>
+        <div class="back-desk">
+          <img class="img-fluid" src="./Images/Schedule/29.png" alt="29" />
+        </div>
+      </div>
+
+      <div class="page-desk">
+        <div class="front-desk">
+          <img class="img-fluid" src="./Images/Schedule/30.png" alt="30" />
+        </div>
+        <div class="back-desk">
+          <img class="img-fluid" src="./Images/Schedule/31.png" alt="31" />
+        </div>
+      </div>
+
+      <div class="page-desk">
+        <div class="front-desk">
+          <img class="img-fluid" src="./Images/Schedule/32.png" alt="32" />
+        </div>
+        <div class="back-desk">
+          <img class="img-fluid" src="./Images/Schedule/33.png" alt="33" />
+        </div>
+      </div>
+
+      <div class="page-desk">
+        <div class="front-desk">
+          <img class="img-fluid" src="./Images/Schedule/34.png" alt="32" />
+        </div>
+        <div class="back-desk">
+          <img class="img-fluid" src="./Images/Schedule/35.png" alt="33" />
+        </div>
+      </div>
+
+      <div class="page-desk">
+        <div class="front-desk">
+          <img src="./images/Schedule/36.png" alt="36" />
+        </div>
+        <div class="back-desk cover">
+          <h3>That's all, folks</h3>
+          <p>
+            FlipBook code and content:<br /><a
+              href="https://stackoverflow.com/users/383904/roko-c-buljan"
+              target="_blank"
+              rel="nofollow"
+              >Roko C. Buljan</a
+            >
+            <br />Original idea:<br /><a
+              href="https://stackoverflow.com/a/76978444/383904"
+              target="_blank"
+              rel="nofollow"
+              >Stack Overflow answer</a
+            >
+            <br />Images by: picsum.photos
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
