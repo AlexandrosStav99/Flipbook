@@ -638,3 +638,24 @@ body {
     transform: translateY(0%);
   }
 }
+
+
+@media screen and (max-width: 850px) {
+  #mobile {
+    display: block !important;
+  }
+
+  #desktop {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 851px) {
+  #mobile {
+    display: none !important;
+  }
+
+  #desktop {
+    display: flex !important;
+  }
+}
