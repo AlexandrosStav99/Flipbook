@@ -539,6 +539,13 @@ body {
   height: 100%;
 }
 
+@media  screen and (max-width:850px) {
+.front-desk:has(img),
+.back-desk:has(img) {
+  width: 100%;
+}
+}
+
 .front-desk>img:not(.logo),
 .back-desk>img:not(.logo),
 .page-content>img:not(.logo) {
