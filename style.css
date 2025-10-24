@@ -493,7 +493,7 @@ body {
   );
   rotate: 0 1 0 calc(clamp(0, var(--c) - var(--i), 1) * -180deg);
   box-shadow: 0 0.5em 1em -0.2em #00000020;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .front-desk,
