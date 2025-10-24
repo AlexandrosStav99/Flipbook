@@ -388,7 +388,7 @@ h2 {
   content: "";
   position: absolute;
   inset: -15% 0 -15% 0;
-  background-image: url("./images/stars.png");
+  background-image: url("./Images/stars.png");
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(1.1) contrast(1.1);
@@ -540,9 +540,9 @@ body {
 }
 
 @media  screen and (max-width:850px) {
-.front-desk:has(img),
-.back-desk:has(img) {
-  width: 100%;
+.front-desk>img:not(.logo),
+.back-desk>img{
+  width: 100% !important;
 }
 }
 
